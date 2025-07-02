@@ -1,0 +1,303 @@
+Delivered-To: gunutig123@gmail.com
+Received: by 2002:a05:7301:719c:b0:160:1bb0:4fde with SMTP id sr28csp826010dyb;
+        Thu, 6 Mar 2025 23:35:35 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IEKiF1Mc5Es3biOWtvMFbelZLhs7FJDgHoBVGfadMCbuLWLP6wLpbPpnaWT07Kx5vxRouwd
+X-Received: by 2002:a05:620a:838e:b0:7c3:c9ea:32f0 with SMTP id af79cd13be357-7c4e617ab87mr334146285a.46.1741332935578;
+        Thu, 06 Mar 2025 23:35:35 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1741332935; cv=none;
+        d=google.com; s=arc-20240605;
+        b=j+OJKD8tB3bqCxmfhTeLrlHfiuncfDi4jhDIjUf/MffcGtIoK1htvWy07ouc5yf77a
+         taZSCEolIzZHBVQiiv2R3CVJl8aT9KIjbhexKMPaPTioAd4WyyB2iPWd1QH/mQQxqyoq
+         iOYoZFaC4Lrgz5h2WFw0pHyGnxWYOk3+M5gqOCWWTBFGDUHzjDwtiCfFwRpBjG/wIJvY
+         SJTR6LktL24AqqwrzhF/OaBIZ985mFz0oX80PMX2IbEePOPRNiFq6xth3OhggLvNebA0
+         lTLeCR07P70OyN7iK286aOkrnThN5b8MqMK8yQMNM0aKU2JQvgBxtYTk5yCe2W6mdwAx
+         8ooQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=feedback-id:content-transfer-encoding:mime-version:to:reply-to:from
+         :subject:date:message-id:dkim-signature:dkim-signature;
+        bh=FI2hlDQeXSddUdv+rGg6qo2FJHy7J/pXg2Yx/3der5Q=;
+        fh=xAGoE3fQBxv3hNeJNlmJT480KQIeBKU/+Qpme2f99fc=;
+        b=WTTq1uTWTFrQLdcAR57miA8c7RCphrcYHLs9SHKsO+jpOi4WzxzEoHM+UNNgGXWohT
+         2E1mSn1j6Ya3AZecOUM1QHPu8dX0e3Ro+xudnYe9MDoaPh0zl7Fe/wnhFm4FgSm5YLeN
+         Ia08CvbHUW3EipkAa+XOfJrujpa7/JzVQzgL/Sqnxh9Bd5f9yEXGNmyQsln/THEWRlPp
+         fgqRQ2Z7ZiOaHh/bb7djAXicsnoTmOsetmofL18CR5qzNOgCQ053LhvyIVSgLU58e2/V
+         agGABrtmjhibSnlK8mw+4n6w73bK0GzcZElbIZGYykUW3D2YTX1TeCcti3e982mQUT0y
+         xbxA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@e-yantra.org header.s=oyrrv5iymewb6o7tx5jtc2k2lakflqgi header.b=aHyoo+2o;
+       dkim=pass header.i=@amazonses.com header.s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug header.b=oQ4B+nNA;
+       spf=pass (google.com: domain of 010001956f87f244-aa652b10-c3a0-42ae-83d3-90a3b31e7f81-000000@email.e-yantra.org designates 54.240.9.20 as permitted sender) smtp.mailfrom=010001956f87f244-aa652b10-c3a0-42ae-83d3-90a3b31e7f81-000000@email.e-yantra.org;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=e-yantra.org
+Return-Path: <010001956f87f244-aa652b10-c3a0-42ae-83d3-90a3b31e7f81-000000@email.e-yantra.org>
+Received: from a9-20.smtp-out.amazonses.com (a9-20.smtp-out.amazonses.com. [54.240.9.20])
+        by mx.google.com with ESMTPS id af79cd13be357-7c3e536d365si282454485a.189.2025.03.06.23.35.35
+        for <gunutig123@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 06 Mar 2025 23:35:35 -0800 (PST)
+Received-SPF: pass (google.com: domain of 010001956f87f244-aa652b10-c3a0-42ae-83d3-90a3b31e7f81-000000@email.e-yantra.org designates 54.240.9.20 as permitted sender) client-ip=54.240.9.20;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@e-yantra.org header.s=oyrrv5iymewb6o7tx5jtc2k2lakflqgi header.b=aHyoo+2o;
+       dkim=pass header.i=@amazonses.com header.s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug header.b=oQ4B+nNA;
+       spf=pass (google.com: domain of 010001956f87f244-aa652b10-c3a0-42ae-83d3-90a3b31e7f81-000000@email.e-yantra.org designates 54.240.9.20 as permitted sender) smtp.mailfrom=010001956f87f244-aa652b10-c3a0-42ae-83d3-90a3b31e7f81-000000@email.e-yantra.org;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=e-yantra.org
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=oyrrv5iymewb6o7tx5jtc2k2lakflqgi; d=e-yantra.org; t=1741332935;
+	h=Message-ID:Date:Subject:From:Reply-To:To:MIME-Version:Content-Type:Content-Transfer-Encoding;
+	bh=8Xd+HGk0eki5+ZYCZvKMBkT7vbxJn6nMwmp6MY2EIPU=;
+	b=aHyoo+2oYqhCsibDVpxNNA9weu21qp3Bda419j1c/jr1z16nOvtHJtsmDWqgP8WQ
+	1KhcqTxi8QQE0PjhA4fdVu2Sbpg6r+fx2K3hSNfHy8lq+vKsI24Ez2J2EBad6zJbUY6
+	REVLtlZa+gE2vABk30fdi3EQWDYd8XD+zi0oK51s=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1741332935;
+	h=Message-ID:Date:Subject:From:Reply-To:To:MIME-Version:Content-Type:Content-Transfer-Encoding:Feedback-ID;
+	bh=8Xd+HGk0eki5+ZYCZvKMBkT7vbxJn6nMwmp6MY2EIPU=;
+	b=oQ4B+nNAOFvtjsdf+UwVKRgc48fTS/hosPZHTD1dWEf87jOU4VtE+X8TrrN5cylB
+	Dqrglz8H+njFPybZzoXjVsLV1RfNxJS/KAVsUUAPxQXdasRO4S3/7f13Fo34MYBReUv
+	+1bPOB8W69Wvut+5flEm2yCUP2NNY9JLK/7dKkg8=
+Message-ID: <010001956f87f244-aa652b10-c3a0-42ae-83d3-90a3b31e7f81-000000@email.amazonses.com>
+Date: Fri, 7 Mar 2025 07:35:35 +0000
+Subject: [eYRC 2024-25] Grand Finale Instructions
+From: "e-Yantra, IIT Bombay" <helpdesk@e-yantra.org>
+Reply-To: helpdesk@e-yantra.org
+To: gunutig123@gmail.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Feedback-ID: ::1.us-east-1.5C3YICG2w8KU6SvGI14YL5qU3DJApuvaE1Y8xX0ap9g=:AmazonSES
+X-SES-Outgoing: 2025.03.07-54.240.9.20
+
+<div style=3D"width:700px; padding: 0px; background-color:#d1d8ce">
+<div =
+style=3D"padding:0px; margin:0px; background-color:#d1d8ce; text-align:cent=
+er;">
+   <a href=3D"https://school.e-yantra.org" target=3D"_blank">
+   =
+ <img style=3D"padding: 20px;" width=3D"294" src=3D"https://portal.e-yantra=
+.org/img/footer_iitb_eyantra.png" alt=3D"e-Yantra"/>
+  </a>
+</div>
+<i=
+mg class=3D"adapt-img" src=3D"https://portal.e-yantra.org/img/header_below_=
+email.png" alt=3D""
+  style=3D"display:block;border:0;outline:none;text-d=
+ecoration:none;-ms-interpolation-mode:bicubic" width=3D"100%">
+
+<!-- co=
+ntent -->
+<div style=3D"text-align:center;padding: 20px 0px 20px 0px; bac=
+kground-color: #ededed; font-family: Verdana, Geneva, sans-serif;font-size:=
+14px;">
+  <div class=3D"content">
+    <table>
+      <tr>
+        <t=
+d style=3D"text-align: justify; padding: 0px 30px 0px 30px;">
+          <=
+h3>Dear Participant,</h3>
+
+<h3>Greetings from Team e-Yantra!</h3>
+
+<h3>We are thrilled to inform you that your team has been selected to parti=
+cipate in the&nbsp;<strong>e-Yantra Robotics Competition 2024-25 National F=
+inals</strong>, hosted at the&nbsp;<strong>Indian Institute of Technology B=
+ombay (IIT Bombay)</strong>.</h3>
+
+<h3>The event will be held from&nbsp;<strong>March 27, 2025, to March 29, 2=
+025</strong>. For detailed information, please refer to the schedule availa=
+ble&nbsp;<a href=3D"https://portal.e-yantra.org/finale" target=3D"_blank">h=
+ere</a>.</h3>
+
+<hr />
+<h3><strong>General Instructions:</strong></h3>
+
+<ol>
+=09<li>
+=09<p>Team members qualified to participate in the finals of the Robotics c=
+ompetition and possessing a&nbsp;<strong>valid College Identity Card&nbsp;<=
+/strong>will be permitted to enter the IIT campus for the competition final=
+s.</p>
+=09</li>
+=09<li>
+=09<p>Your arrival information has been provided to the security office at =
+IITB Main Gate for verification. Hence student teams participating in the c=
+ompetition must enter IIT Bombay Campus through&nbsp;<strong>Main Gate&nbsp=
+;</strong>only by displaying their valid college identity card to security.=
+</p>
+=09</li>
+=09<li>
+=09<p>Only registered team members are allowed to attend the finals. No tea=
+m member can be changed at this point.</p>
+=09</li>
+=09<li>
+=09<p>The team should ensure that security would issue a&nbsp;<strong>Gate-=
+Pass</strong>&nbsp;for all the personal electronic goods (for example lapto=
+ps, robots, Cameras etc.) on your arrival. Teams will be required to produc=
+e this Gate-Pass when you exit the IITB Campus. This process is required by=
+ IITB security.</p>
+=09</li>
+=09<li>
+=09<p>Due to High alert Security currently prevailing in the country in gen=
+eral please download the No Objection Letter document from the portal. It i=
+s desirable to have this document printed on your&nbsp;<strong>college lett=
+erhead.&nbsp;</strong>Please fill in the correct information wherever indic=
+ated and get this signed by the Dean/Director/Principal or any such designa=
+ted authority of your college.&nbsp;<strong>And please carry this letter wi=
+th you during your travel to IIT Bombay for the finals of the e-Yantra robo=
+tics competition.</strong></p>
+=09</li>
+</ol>
+
+<hr />
+<h3><strong>Instructions for finalists:</strong></h3>
+
+<ol>
+=09<li>All Teams are requested to be present at the competition venue&nbsp;=
+<strong>at least 15 minutes</strong>&nbsp;before the scheduled start of the=
+ir Theme.</li>
+=09<li>Teams not reporting within the given time will be disqualified.</li>
+=09<li>For all Themes, Teams will be called in random order for the final d=
+emonstration.</li>
+=09<li>Teams will be evaluated based on the scoring formula as mentioned in=
+ the rulebook, apart from this additional marks will be awarded by judges b=
+ased on performance during the final demonstration.</li>
+=09<li>Teams will be provided&nbsp;<strong>one practice arena setup per The=
+me</strong>&nbsp;from 3 PM onwards on March 27th 2025, as specified in the =
+rulebook. Teams can carry extra blocks, electronic circuits, etc. (as requi=
+red for specific Themes) for practice. As stated above since the arena will=
+ be provided, you need not carry it for the finals.</li>
+=09<li>An arena of quality similar to one provided for practice will be pro=
+vided for finals.</li>
+=09<li>Winners of the competition will be awarded certificates and cash pri=
+zes. All finalists are eligible to undergo the selection process for the e-=
+Yantra Summer Internship program.&nbsp;</li>
+=09<li>Students are requested to report at the address given below:</li>
+</ol>
+
+<p><strong>ERTS Lab,</strong><br />
+GR-17 (Old 102) Ground Floor, KReSIT Building, CSE Department<br />
+IIT Bombay, Powai - 400076<br />
+Contact: (022) 2576-4986</p>
+
+<hr />
+<h3><strong>Covering travel expenses:</strong></h3>
+
+<ol>
+=09<li>Each shortlisted team member coming to IIT Bombay for eYRC finals wi=
+ll receive a payment of Rs. 5000/- towards travel expenses to and from IIT =
+Bombay to home for outstation participants. For participants in the finals =
+from Mumbai, each team member will receive Rs. 2000/- towards travel expens=
+es from home to IITB and back.</li>
+=09<li>Teams are advised to carry with them proof of travel.</li>
+</ol>
+
+<hr />
+<h3><strong>Accommodation:</strong></h3>
+
+<ol>
+=09<li>Teams selected for the finals of the competition will be provided ho=
+stel accommodation free of cost. A hostel dormitory/room will be available =
+for team members on a shared basis.</li>
+=09<li>Please note that ONLY team members after verification will be allowe=
+d to stay in the hostel.</li>
+=09<li>For outstation candidates participating in the competition hostel ac=
+commodation will be available after 11:00 AM of 27th March 2025.</li>
+=09<li>The team should vacate the accommodation latest by&nbsp;<strong>noon=
+</strong><strong>&nbsp;30th March 2025</strong><strong>.</strong></li>
+=09<li><strong>No accommodation will be provided to any person other than t=
+eam members.</strong></li>
+=09<li><strong>Mumbai-based teams will not be provided Hostel Accommodation=
+ and should report on all days of the competition from 27th to 29th March, =
+2025.</strong></li>
+</ol>
+
+<hr />
+<h3><strong>Food:</strong></h3>
+
+<ol>
+=09<li>Meals will be provided to all participants on two days of the compet=
+ition&nbsp;<strong>- March 28, 2025, and March 29, 2025.</strong></li>
+=09<li>No food arrangements on days other than those mentioned above.</li>
+=09<li>There are several places to eat on campus such as student hostels, t=
+he Gulmohar cafeteria and others.</li>
+</ol>
+
+<h3><strong>Vendor Registration:</strong></h3>
+
+<p>To transfer your Travel expenses and prize money (if applicable) each me=
+mber is required to create a vendor registration.&nbsp;<strong>Please log i=
+n to the portal and visit the&nbsp;<a href=3D"https://portal.e-yantra.org/p=
+rofile_finalist_instruction" target=3D"_blank">Finale Instructions page</a>=
+&nbsp;for more details.</strong></p>
+
+<p>&nbsp;</p>
+
+<p>-- e-Yantra Team</p>
+        </td>
+      </tr>
+          </table>=
+
+  </div>
+</div>
+<!-- footer -->
+<div style=3D"padding:20px 50px; m=
+argin:0px; background-color: #999999;">
+  <p align=3D"center">e-Yantra is=
+ a project sponsored by MoE <br>through the National Mission on Education t=
+hrough ICT (NMEICT)</p>
+  <p align=3D"center" style=3D"color:white;">Shar=
+e this</p>
+  <div style=3D"display:flex;justify-content:center;">
+    <=
+div>
+      <a href=3D"//www.facebook.com/eyantra" target=3D"_blank" style=
+=3D"margin-right: 10px;">
+        <img width=3D"25" height=3D"25" src=3D"=
+https://portal.e-yantra.org/img/social/facebook.png" alt=3D"Facebook"/>
+ =
+     </a>
+    </div>
+    <!-- twitter -->
+    <div>
+      <a href=
+=3D"//twitter.com/eyantra_iitb" target=3D"_blank" style=3D"margin-right: 10=
+px;">
+        <img width=3D"25" height=3D"25" src=3D"https://portal.e-yan=
+tra.org/img/social/twitter.png" alt=3D"twitter"/>
+      </a>
+    </div>=
+
+    <!-- linkedin -->
+    <div>
+      <a href=3D"https://www.linkedi=
+n.com/company/14407133/admin/" target=3D"_blank" style=3D"margin-right: 10p=
+x;">
+        <img width=3D"25" height=3D"25" src=3D"https://portal.e-yant=
+ra.org/img/social/linkedin.png" alt=3D"linkedin"/>
+      </a>
+    </div=
+>
+    <!-- insta -->
+    <div>
+      <a href=3D"//www.instagram.com/e=
+yantra/" target=3D"_blank" style=3D"margin-right: 10px;">
+        <img wi=
+dth=3D"25" height=3D"25" src=3D"https://portal.e-yantra.org/img/social/inst=
+agram.png" alt=3D"instagram"/>
+      </a>
+    </div>
+    <!-- youtube=
+ -->
+    <div>
+      <a href=3D"https://www.youtube.com/user/eyantra/vi=
+deos" target=3D"_blank" style=3D"margin-right: 10px;">
+        <img width=
+=3D"25" height=3D"25" src=3D"https://portal.e-yantra.org/img/social/youtube=
+.png" alt=3D"Youtube"/>
+      </a>
+    </div>
+  </div>
+</div>
+</d=
+iv>
+

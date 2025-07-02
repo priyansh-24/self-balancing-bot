@@ -1,0 +1,51 @@
+(BB_2359) C:\Users\gunut\OneDrive\Desktop\Task1C_windows_V2>python evaluator.py
+warning: import zmqRemoteApi is deprecated. Please use import coppeliasim_zmqremoteapi_client instead.
+Requirement already satisfied: cryptocode in c:\users\gunut\miniconda3\envs\bb_2359\lib\site-packages (0.1)
+Requirement already satisfied: pycryptodomex in c:\users\gunut\miniconda3\envs\bb_2359\lib\site-packages (from cryptocode) (3.20.0)
+        Balancing Builder Bot Task-1c Local GRADER
+                >>>>>>>>>>>>>
+                >>>>>>>>>>>>>
+                --VERSION-1--
+                >>>>>>>>>>>>>
+                >>>>>>>>>>>>>
+
+        Enter your Team ID (for e.g.: "1234" or "321"): 2359
+
+         Following progress recorded:
+
+         Score = 49.007333333333335
+
+1.2500000000000009
+3.1699999999999764
+
+         ###### WARNING : The score you get is just the local performance evaluation - to help improve the solution.
+         ###### WARNING : There will be additional checks performed on your solution on e-Yantra PORTAL after you submit.
+         ###### WARNING : Follow Task Rules Strictly.
+         ###### WARNING : e-Yantra Reserves the right to change the status of submission to FAILED any-time-after-submission... if any violation encountered
+        +--------------------------------------------------------------------------+
+        |              $          $$$$$$$$$$$$$$$$$$$$$$$$         #              |
+        |             $ $      $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$     # #             |
+        |            $   $   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  #   #            |
+        |           $     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$     #           |
+        |           $     $$$$$$$$$####$$$$$$$$$$$$$####$$$$$$$$$$    #           |
+        |            $   $$$$$$$$$######$$$$$$$$$$$######$$$$$$$$$$  #            |
+        |             $ $$$$$$$$$$ #### $$$$$$$$$$$ #### $$$$$$$$$$$#             |
+        |              $$$$$$$$$$$$    $$$$$$$$$$$$$    $$$$$$$$$$$$$             |
+        |             $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$            |
+        |            $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$           |
+        |            $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$           |
+        |            $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$           |
+        |            $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$            |
+        |            $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$            |
+        |             $$$$$$  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  $$$$$$$            |
+        |              $$$$$$   $$$$$$$$$$$$$$$$$$$$$$$$$$$$  $$$$$$$             |
+        |               $$$$$$   $   $$$$$$$$$$$$$$$$$$   $  $$$$$$$              |
+        |                $$$$$$$  $ $                  $ $ $$$$$$$                |
+        |                 $$$$$$$$ $                    $ $$$$$$$                 |
+        |                   $$$$$$$$$$$             $$$$$$$$$$$                   |
+        |                      $$$$$$$$$$$$$$$$$$$$$$$$$$$$$                      |
+        |                         $$$$$$$$$$$$$$$$$$$$$$$$                        |
+        |                            $$$$$$$$$$$$$$$$$$                           |
+        +--------------------------------------------------------------------------+
+
+(BB_2359) C:\Users\gunut\OneDrive\Desktop\Task1C_windows_V2>
